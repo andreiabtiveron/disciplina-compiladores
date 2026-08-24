@@ -1,0 +1,28 @@
+===== Execução: testes/01_lexico_valido.txt =====
+Source code:
+let valor1 = 123 + 4;
+print(valor1);
+
+
+Tokens:
+LET
+IDENT(valor1)
+EQUAL
+NUMBER(123)
+PLUS
+NUMBER(4)
+SEMICOLON
+PRINT
+IDENT(valor1)
+SEMICOLON
+EOF
+
+AST:
+AST_ASSIGN(valor1)
+  AST_BINARY_OP(+)
+    AST_NUMBER(123)
+    AST_NUMBER(4)
+
+Program output:
+127
+Exit code: 0

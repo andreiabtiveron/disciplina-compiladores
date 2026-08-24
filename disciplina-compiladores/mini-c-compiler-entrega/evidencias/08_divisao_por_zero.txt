@@ -1,0 +1,28 @@
+===== Execução: testes/08_divisao_por_zero.txt =====
+Source code:
+let resultado = 10 / 0;
+print(resultado);
+
+
+Tokens:
+LET
+IDENT(resultado)
+EQUAL
+NUMBER(10)
+DIV
+NUMBER(0)
+SEMICOLON
+PRINT
+IDENT(resultado)
+SEMICOLON
+EOF
+
+AST:
+AST_ASSIGN(resultado)
+  AST_BINARY_OP(/)
+    AST_NUMBER(10)
+    AST_NUMBER(0)
+
+Program output:
+Runtime error: division by zero
+Exit code: 1

@@ -1,0 +1,26 @@
+===== Execução: testes/11_precedencia_teste_c.txt =====
+Source code:
+print(2 + 3 * 4);
+
+
+Tokens:
+PRINT
+NUMBER(2)
+PLUS
+NUMBER(3)
+MULT
+NUMBER(4)
+SEMICOLON
+EOF
+
+AST:
+AST_PRINT
+  AST_BINARY_OP(+)
+    AST_NUMBER(2)
+    AST_BINARY_OP(*)
+      AST_NUMBER(3)
+      AST_NUMBER(4)
+
+Program output:
+14
+Exit code: 0

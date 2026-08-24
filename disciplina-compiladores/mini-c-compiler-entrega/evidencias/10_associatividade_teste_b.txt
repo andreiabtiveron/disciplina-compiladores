@@ -1,0 +1,26 @@
+===== Execução: testes/10_associatividade_teste_b.txt =====
+Source code:
+print(10 - 3 - 2);
+
+
+Tokens:
+PRINT
+NUMBER(10)
+MINUS
+NUMBER(3)
+MINUS
+NUMBER(2)
+SEMICOLON
+EOF
+
+AST:
+AST_PRINT
+  AST_BINARY_OP(-)
+    AST_BINARY_OP(-)
+      AST_NUMBER(10)
+      AST_NUMBER(3)
+    AST_NUMBER(2)
+
+Program output:
+5
+Exit code: 0

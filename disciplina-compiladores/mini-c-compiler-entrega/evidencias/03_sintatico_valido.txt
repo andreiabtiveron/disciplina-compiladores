@@ -1,0 +1,32 @@
+===== Execução: testes/03_sintatico_valido.txt =====
+Source code:
+let resultado = (10 + 5) * 2;
+print(resultado);
+
+
+Tokens:
+LET
+IDENT(resultado)
+EQUAL
+NUMBER(10)
+PLUS
+NUMBER(5)
+MULT
+NUMBER(2)
+SEMICOLON
+PRINT
+IDENT(resultado)
+SEMICOLON
+EOF
+
+AST:
+AST_ASSIGN(resultado)
+  AST_BINARY_OP(*)
+    AST_BINARY_OP(+)
+      AST_NUMBER(10)
+      AST_NUMBER(5)
+    AST_NUMBER(2)
+
+Program output:
+30
+Exit code: 0

@@ -1,0 +1,14 @@
+===== Execução: testes/06_parentese_incompleto.txt =====
+Source code:
+print((10 + 5);
+
+
+Tokens:
+PRINT
+NUMBER(10)
+PLUS
+NUMBER(5)
+SEMICOLON
+EOF
+Syntax error: expected ')' at pos=7
+Exit code: 1

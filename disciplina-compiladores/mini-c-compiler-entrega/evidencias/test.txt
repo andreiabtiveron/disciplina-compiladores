@@ -1,0 +1,37 @@
+===== Execução: examples/test.txt =====
+Source code:
+let x = 5 + 3;
+let y = 1 + 1;
+print(x + y);
+
+Tokens:
+LET
+IDENT(x)
+EQUAL
+NUMBER(5)
+PLUS
+NUMBER(3)
+SEMICOLON
+LET
+IDENT(y)
+EQUAL
+NUMBER(1)
+PLUS
+NUMBER(1)
+SEMICOLON
+PRINT
+IDENT(x)
+PLUS
+IDENT(y)
+SEMICOLON
+EOF
+
+AST:
+AST_ASSIGN(x)
+  AST_BINARY_OP(+)
+    AST_NUMBER(5)
+    AST_NUMBER(3)
+
+Program output:
+10
+Exit code: 0

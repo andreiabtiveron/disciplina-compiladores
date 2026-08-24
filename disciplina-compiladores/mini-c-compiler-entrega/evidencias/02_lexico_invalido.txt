@@ -1,0 +1,7 @@
+===== Execução: testes/02_lexico_invalido.txt =====
+Source code:
+let valor = 10 @ 2;
+
+
+Unknown character: @
+Exit code: 1

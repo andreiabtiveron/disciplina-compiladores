@@ -1,0 +1,2 @@
+let valor1 = 123 + 4;
+print(valor1);

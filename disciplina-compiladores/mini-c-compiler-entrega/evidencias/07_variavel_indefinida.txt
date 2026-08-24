@@ -1,0 +1,18 @@
+===== Execução: testes/07_variavel_indefinida.txt =====
+Source code:
+print(idade);
+
+
+Tokens:
+PRINT
+IDENT(idade)
+SEMICOLON
+EOF
+
+AST:
+AST_PRINT
+  AST_VAR(idade)
+
+Program output:
+Runtime error: undefined variable 'idade'
+Exit code: 1

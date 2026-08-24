@@ -1,0 +1,15 @@
+===== Execução: testes/04_sem_igual.txt =====
+Source code:
+let resultado 10 + 5;
+
+
+Tokens:
+LET
+IDENT(resultado)
+NUMBER(10)
+PLUS
+NUMBER(5)
+SEMICOLON
+EOF
+Syntax error: expected '=' at pos=2
+Exit code: 1

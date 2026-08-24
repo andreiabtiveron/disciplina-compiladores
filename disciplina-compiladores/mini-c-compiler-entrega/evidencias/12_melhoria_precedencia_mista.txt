@@ -1,0 +1,40 @@
+===== Execução: testes/12_melhoria_precedencia_mista.txt =====
+Source code:
+let x = 2 * 3;
+let y = 2 * x + 3;
+print(y / x);
+
+
+Tokens:
+LET
+IDENT(x)
+EQUAL
+NUMBER(2)
+MULT
+NUMBER(3)
+SEMICOLON
+LET
+IDENT(y)
+EQUAL
+NUMBER(2)
+MULT
+IDENT(x)
+PLUS
+NUMBER(3)
+SEMICOLON
+PRINT
+IDENT(y)
+DIV
+IDENT(x)
+SEMICOLON
+EOF
+
+AST:
+AST_ASSIGN(x)
+  AST_BINARY_OP(*)
+    AST_NUMBER(2)
+    AST_NUMBER(3)
+
+Program output:
+2
+Exit code: 0

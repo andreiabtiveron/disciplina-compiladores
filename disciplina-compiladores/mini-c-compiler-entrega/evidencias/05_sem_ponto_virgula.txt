@@ -1,0 +1,14 @@
+===== Execução: testes/05_sem_ponto_virgula.txt =====
+Source code:
+let resultado = 10 + 5
+
+Tokens:
+LET
+IDENT(resultado)
+EQUAL
+NUMBER(10)
+PLUS
+NUMBER(5)
+EOF
+Syntax error: expected ';' at pos=6
+Exit code: 1
