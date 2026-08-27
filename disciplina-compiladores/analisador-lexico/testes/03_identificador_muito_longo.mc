@@ -1,0 +1,1 @@
+int estaVariavelTemUmNomeMuitoMuitoMuitoLongoDeProposito = 1;
