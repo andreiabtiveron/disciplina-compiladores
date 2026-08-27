@@ -1,0 +1,24 @@
+# Binários gerados pela compilação
+minilexer
+minilexer.exe
+*.exe
+*.out
+
+# Arquivos objeto e de depuração
+*.o
+*.obj
+*.dSYM/
+
+# Diretórios de build, se você usar algum
+build/
+bin/
+
+# Arquivos de editores/IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
