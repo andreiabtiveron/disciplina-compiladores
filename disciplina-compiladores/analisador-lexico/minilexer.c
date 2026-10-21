@@ -44,8 +44,6 @@ static int espiar(void) {
     return caractereEspiado;
 }
  
-/* Consome o proximo caractere (usando o que foi espiado, se houver)
- * e atualiza corretamente a linha e a coluna. */
 static int avancar(void) {
     int c = espiar();
     caractereEspiado = -2;
@@ -314,9 +312,9 @@ static void emitirSimples(TipoToken tipo, const char *lexema, int linha, int col
     imprimirToken(&token);
 }
  
-/* ------------------------------------------------------------------ */
-/* Laco principal do analisador lexico                                 */
-/* ------------------------------------------------------------------ */
+
+// Laco principal do analisador lexico
+
  
 static void analisar(void) {
     for (;;) {
@@ -337,7 +335,6 @@ static void analisar(void) {
  
         if (c == '/') {
             if (espiar() == '/') {
-                /* comentario de uma linha: ignora ate o fim da linha */
                 avancar();
                 while (espiar() != '\n' && espiar() != EOF) {
                     avancar();
